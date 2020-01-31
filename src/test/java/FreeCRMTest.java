@@ -36,8 +36,8 @@ public class FreeCRMTest {
 	@BeforeTest
 	public void setExtent(){
 		extent = new ExtentReports(System.getProperty("user.dir")+"/test-output/ExtentReport.html", true);
-		extent.addSystemInfo("Host Name", "Naveen Mac");
-		extent.addSystemInfo("User Name", "Naveen Automation Labs");
+		extent.addSystemInfo("Host Name", "Anu Mac");
+		extent.addSystemInfo("User Name", "Anu Automation Labs");
 		extent.addSystemInfo("Environment", "QA");
 		
 	}
@@ -85,13 +85,13 @@ public class FreeCRMTest {
 		extentTest = extent.startTest("freeCrmTitleTest");
 		String title = driver.getTitle();
 		System.out.println(title);
-		Assert.assertEquals(title,"#1 Free CRM for Any Business: Online Customer Relationship Software123");
+		Assert.assertEquals(title,"Free CRM #1 cloud software for any business large or small");
 	}
 	
 	@Test
 	public void freemCRMLogoTest(){
 		extentTest = extent.startTest("freemCRMLogoTest");
-		boolean b = driver.findElement(By.xpath("//img[@class='img-responsive111']")).isDisplayed();
+		boolean b = driver.findElement(By.cssSelector(".rd-navbar-inner")).isDisplayed();
 		Assert.assertTrue(b);
 	}
 	

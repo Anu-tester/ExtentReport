@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-FreeCRMTest">
-              <span class="suite-name border-failed">FreeCRMTest</span>
+              <span class="suite-name border-passed">FreeCRMTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,26 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-FreeCRMTest" class="hide-methods failed suite-FreeCRMTest"> (hide)</a> <!-- hide-methods failed suite-FreeCRMTest -->
-                      <a href="#" panel-name="suite-FreeCRMTest" class="show-methods failed suite-FreeCRMTest"> (show)</a> <!-- show-methods failed suite-FreeCRMTest -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-FreeCRMTest" class="hide-methods passed suite-FreeCRMTest"> (hide)</a> <!-- hide-methods passed suite-FreeCRMTest -->
+                      <a href="#" panel-name="suite-FreeCRMTest" class="show-methods passed suite-FreeCRMTest"> (show)</a> <!-- show-methods passed suite-FreeCRMTest -->
                     </span>
-                    <div class="method-list-content failed suite-FreeCRMTest">
+                    <div class="method-list-content passed suite-FreeCRMTest">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-FreeCRMTest" title="FreeCRMTest" hash-for-method="freeCrmTitleTest">freeCrmTitleTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-FreeCRMTest" title="FreeCRMTest" hash-for-method="freemCRMLogoTest">freemCRMLogoTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-FreeCRMTest -->
+                    </div> <!-- method-list-content passed suite-FreeCRMTest -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,9 +122,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-FreeCRMTest" class="panel FreeCRMTest">
-          <div class="suite-FreeCRMTest-class-failed">
+          <div class="suite-FreeCRMTest-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">FreeCRMTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -133,10 +133,6 @@
                   <a name="freeCrmTitleTest">
                   </a> <!-- freeCrmTitleTest -->
                   <span class="method-name">freeCrmTitleTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [#1 Free CRM for Any Business: Online Customer Relationship Software123] but found [Free CRM #1 cloud software for any business large or small]
-	at FreeCRMTest.freeCrmTitleTest(FreeCRMTest.java:88)
-... Removed 40 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -144,36 +140,10 @@
                   <a name="freemCRMLogoTest">
                   </a> <!-- freemCRMLogoTest -->
                   <span class="method-name">freemCRMLogoTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@class=&apos;img-responsive111&apos;]&quot;}
-  (Session info: chrome=79.0.3945.130)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
-System info: host: &apos;DESKTOP-G2S5BGV&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\Anu\AppData\Local\Temp\scoped_dir14660_2161}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=79.0.3945.130, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 9f944acce7b61899a840108f356588fe
-*** Element info: {Using=xpath, value=//img[@class=&apos;img-responsive111&apos;]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
-	at FreeCRMTest.freemCRMLogoTest(FreeCRMTest.java:94)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-FreeCRMTest-class-failed -->
+          </div> <!-- suite-FreeCRMTest-class-passed -->
         </div> <!-- panel FreeCRMTest -->
         <div panel-name="test-xml-FreeCRMTest" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -229,16 +199,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'freemCRMLogoTest')
 data.setCell(0, 2, 'FreeCRMTest')
-data.setCell(0, 3, 10055);
+data.setCell(0, 3, 45);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'freeCrmTitleTest')
 data.setCell(1, 2, 'FreeCRMTest')
-data.setCell(1, 3, 19);
+data.setCell(1, 3, 34);
 window.suiteTableData['FreeCRMTest']= { tableData: data, tableDiv: 'times-div-FreeCRMTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 79 ms</span>
               <div id="times-div-FreeCRMTest">
               </div> <!-- times-div-FreeCRMTest -->
             </div> <!-- times-div -->
@@ -271,35 +241,31 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">277 ms</span>
+                <span class="method-start">386 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">freeCrmTitleTest</span>
-                <span class="method-start">6310 ms</span>
+                <span class="method-start">7906 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=freeCrmTitleTest status=FAILURE method=FreeCRMTest.freeCrmTitleTest()[pri:0, instan...)</span>
-                <span class="method-start">6332 ms</span>
+                <span class="method-name">tearDown([TestResult name=freeCrmTitleTest status=SUCCESS method=FreeCRMTest.freeCrmTitleTest()[pri:0, instan...)</span>
+                <span class="method-start">7940 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">7807 ms</span>
+                <span class="method-start">9148 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">freemCRMLogoTest</span>
-                <span class="method-start">12789 ms</span>
+                <span class="method-start">14735 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=freemCRMLogoTest status=FAILURE method=FreeCRMTest.freemCRMLogoTest()[pri:0, instan...)</span>
-                <span class="method-start">22847 ms</span>
+                <span class="method-name">tearDown([TestResult name=freemCRMLogoTest status=SUCCESS method=FreeCRMTest.freemCRMLogoTest()[pri:0, instan...)</span>
+                <span class="method-start">14780 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">23983 ms</span>
+                <span class="method-start">15578 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
