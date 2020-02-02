@@ -1,8 +1,8 @@
 pipeline {
 
     agent any
-    tools {
-        maven 'Maven_3.5.2' 
+  tools {
+        maven 'apache-maven-3.3.2' 
     }
     stages {
         stage('Compile stage') {
@@ -16,6 +16,8 @@ pipeline {
                 bat "mvn test"
         }
     }
+
+
 
           stage('deployment stage') {
               steps {
