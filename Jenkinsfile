@@ -27,6 +27,7 @@ tools {maven 'MAVEN_HOME'}
                     sh 'mvn deploy'
                 
             }
+           
         }
     }
 }
