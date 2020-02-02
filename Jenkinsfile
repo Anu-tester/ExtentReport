@@ -5,7 +5,7 @@ pipeline {
         stage ('Compile Stage') {
 
             steps {
-                withMaven(maven : 'maven_3_5_2') {
+                withMaven(maven : 'apache-maven-3.5.2') {
                     sh 'mvn clean'
                 }
             }
@@ -23,7 +23,7 @@ pipeline {
 
         stage ('Deployment Stage') {
             steps {
-                withMaven(maven : 'maven_3_5_2') {
+                withMaven(maven : 'apache-maven-3.5.2') {
                     sh 'mvn deploy'
                 }
             }
