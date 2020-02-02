@@ -85,7 +85,7 @@ public class FreeCRMTest {
 		extentTest = extent.startTest("freeCrmTitleTest");
 		String title = driver.getTitle();
 		System.out.println(title);
-		Assert.assertEquals(title,"Fre CRM #1 cloud software for any business large or small");
+		Assert.assertEquals(title,"Free CRM #1 cloud software for any business large or small");
 	}
 	
 	@Test
