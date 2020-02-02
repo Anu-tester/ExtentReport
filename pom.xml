@@ -14,17 +14,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-<build>
-  <plugins>
-    <plugin>
-      <groupId>org.jenkins-ci.tools</groupId>
-      <artifactId>maven-hpi-plugin</artifactId>
-      <configuration>
-        <pluginFirstClassLoader>true</pluginFirstClassLoader>
-      </configuration>
-    </plugin>
-  </plugins>
-</build>
+
 	<dependencies>
 
 
