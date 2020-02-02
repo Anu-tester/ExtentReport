@@ -15,7 +15,7 @@ pipeline {
 
             steps {
                 withMaven(maven : 'maven_3_5_2') {
-                    sh 'mvn test'
+                    sh 'mvn clean install'
                 }
             }
         }
