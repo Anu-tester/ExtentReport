@@ -1,5 +1,6 @@
 import java.io.File;
-import java.io.IOException;
+//import java.io.IOException;
+//import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
@@ -49,7 +50,7 @@ public class FreeCRMTest {
 		extent.close();
 	}
 	
-	public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException{
+	public static String getScreenshot(WebDriver driver, String screenshotName) {
 		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
@@ -58,7 +59,12 @@ public class FreeCRMTest {
 		String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/" + screenshotName + dateName
 				+ ".png";
 		File finalDestination = new File(destination);
-		FileHandler.copy(source, finalDestination);
+		try {
+			FileHandler.copy(source, finalDestination);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return destination;
 	}
 	
@@ -101,7 +107,7 @@ public class FreeCRMTest {
 	
 	
 	@AfterMethod
-	public void tearDown(ITestResult result) throws IOException{
+	public void tearDown(ITestResult result){
 		
 		if(result.getStatus()==ITestResult.FAILURE){
 			extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS "+result.getName()); //to add name in extent report

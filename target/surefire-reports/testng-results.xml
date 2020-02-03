@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="FreeCRMTest" duration-ms="14335" started-at="2020-02-03T02:37:41Z" finished-at="2020-02-03T02:37:56Z">
+  <suite name="FreeCRMTest" duration-ms="13425" started-at="2020-02-03T02:49:37Z" finished-at="2020-02-03T02:49:51Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="14335" started-at="2020-02-03T02:37:41Z" finished-at="2020-02-03T02:37:56Z">
+    <test name="Command line test" duration-ms="13425" started-at="2020-02-03T02:49:37Z" finished-at="2020-02-03T02:49:51Z">
       <class name="FreeCRMTest">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:FreeCRMTest@71be98f5]" name="setExtent" is-config="true" duration-ms="171" started-at="2020-02-02T18:37:41Z" finished-at="2020-02-02T18:37:42Z">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:FreeCRMTest@71be98f5]" name="setExtent" is-config="true" duration-ms="171" started-at="2020-02-02T18:49:37Z" finished-at="2020-02-02T18:49:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:FreeCRMTest@71be98f5]" name="setup" is-config="true" duration-ms="6281" started-at="2020-02-02T18:37:42Z" finished-at="2020-02-02T18:37:48Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:FreeCRMTest@71be98f5]" name="setup" is-config="true" duration-ms="6131" started-at="2020-02-02T18:49:37Z" finished-at="2020-02-02T18:49:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="freeCrmTitleTest()[pri:0, instance:FreeCRMTest@71be98f5]" name="freeCrmTitleTest" duration-ms="19" started-at="2020-02-02T18:37:48Z" finished-at="2020-02-02T18:37:48Z">
+        <test-method status="PASS" signature="freeCrmTitleTest()[pri:0, instance:FreeCRMTest@71be98f5]" name="freeCrmTitleTest" duration-ms="12" started-at="2020-02-02T18:49:44Z" finished-at="2020-02-02T18:49:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- freeCrmTitleTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:FreeCRMTest@71be98f5]" name="tearDown" is-config="true" duration-ms="745" started-at="2020-02-02T18:37:48Z" finished-at="2020-02-02T18:37:49Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:FreeCRMTest@71be98f5]" name="tearDown" is-config="true" duration-ms="1113" started-at="2020-02-02T18:49:44Z" finished-at="2020-02-02T18:49:45Z">
           <params>
             <param index="0">
               <value>
@@ -30,15 +30,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:FreeCRMTest@71be98f5]" name="setup" is-config="true" duration-ms="5949" started-at="2020-02-02T18:37:49Z" finished-at="2020-02-02T18:37:55Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:FreeCRMTest@71be98f5]" name="setup" is-config="true" duration-ms="4965" started-at="2020-02-02T18:49:45Z" finished-at="2020-02-02T18:49:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="freemCRMLogoTest()[pri:0, instance:FreeCRMTest@71be98f5]" name="freemCRMLogoTest" duration-ms="55" started-at="2020-02-02T18:37:55Z" finished-at="2020-02-02T18:37:55Z">
+        <test-method status="PASS" signature="freemCRMLogoTest()[pri:0, instance:FreeCRMTest@71be98f5]" name="freemCRMLogoTest" duration-ms="34" started-at="2020-02-02T18:49:50Z" finished-at="2020-02-02T18:49:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- freemCRMLogoTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:FreeCRMTest@71be98f5]" name="tearDown" is-config="true" duration-ms="784" started-at="2020-02-02T18:37:55Z" finished-at="2020-02-02T18:37:55Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:FreeCRMTest@71be98f5]" name="tearDown" is-config="true" duration-ms="697" started-at="2020-02-02T18:49:50Z" finished-at="2020-02-02T18:49:50Z">
           <params>
             <param index="0">
               <value>
@@ -49,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:FreeCRMTest@71be98f5]" name="endReport" is-config="true" duration-ms="317" started-at="2020-02-02T18:37:55Z" finished-at="2020-02-02T18:37:56Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:FreeCRMTest@71be98f5]" name="endReport" is-config="true" duration-ms="287" started-at="2020-02-02T18:49:50Z" finished-at="2020-02-02T18:49:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
