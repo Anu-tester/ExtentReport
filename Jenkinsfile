@@ -6,7 +6,7 @@ tools {maven 'MAVEN_HOME'}
 
             steps {
             
-                    sh 'mvn clean compile'
+                    sh 'mvn clean'
                 
             }
         }
