@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: FreeCRMTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.995 sec
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 14.083 sec <<< FAILURE!
+freeCrmTitleTest(FreeCRMTest)  Time elapsed: 0.022 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Fre CRM #1 cloud software for any business large or small] but found [Free CRM #1 cloud software for any business large or small]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at FreeCRMTest.freeCrmTitleTest(FreeCRMTest.java:88)
+

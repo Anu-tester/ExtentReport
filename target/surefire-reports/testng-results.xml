@@ -1,44 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="FreeCRMTest" duration-ms="13425" started-at="2020-02-03T02:49:37Z" finished-at="2020-02-03T02:49:51Z">
+  <suite name="FreeCRMTest" duration-ms="13453" started-at="2020-02-03T03:01:37Z" finished-at="2020-02-03T03:01:50Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="13425" started-at="2020-02-03T02:49:37Z" finished-at="2020-02-03T02:49:51Z">
+    <test name="Command line test" duration-ms="13453" started-at="2020-02-03T03:01:37Z" finished-at="2020-02-03T03:01:50Z">
       <class name="FreeCRMTest">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:FreeCRMTest@71be98f5]" name="setExtent" is-config="true" duration-ms="171" started-at="2020-02-02T18:49:37Z" finished-at="2020-02-02T18:49:37Z">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:FreeCRMTest@71be98f5]" name="setExtent" is-config="true" duration-ms="167" started-at="2020-02-02T19:01:37Z" finished-at="2020-02-02T19:01:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:FreeCRMTest@71be98f5]" name="setup" is-config="true" duration-ms="6131" started-at="2020-02-02T18:49:37Z" finished-at="2020-02-02T18:49:44Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:FreeCRMTest@71be98f5]" name="setup" is-config="true" duration-ms="5895" started-at="2020-02-02T19:01:37Z" finished-at="2020-02-02T19:01:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="freeCrmTitleTest()[pri:0, instance:FreeCRMTest@71be98f5]" name="freeCrmTitleTest" duration-ms="12" started-at="2020-02-02T18:49:44Z" finished-at="2020-02-02T18:49:44Z">
+        <test-method status="FAIL" signature="freeCrmTitleTest()[pri:0, instance:FreeCRMTest@71be98f5]" name="freeCrmTitleTest" duration-ms="16" started-at="2020-02-02T19:01:43Z" finished-at="2020-02-02T19:01:43Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Fre CRM #1 cloud software for any business large or small] but found [Free CRM #1 cloud software for any business large or small]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Fre CRM #1 cloud software for any business large or small] but found [Free CRM #1 cloud software for any business large or small]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at FreeCRMTest.freeCrmTitleTest(FreeCRMTest.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- freeCrmTitleTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:FreeCRMTest@71be98f5]" name="tearDown" is-config="true" duration-ms="1113" started-at="2020-02-02T18:49:44Z" finished-at="2020-02-02T18:49:45Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:FreeCRMTest@71be98f5]" name="tearDown" is-config="true" duration-ms="1320" started-at="2020-02-02T19:01:43Z" finished-at="2020-02-02T19:01:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=freeCrmTitleTest status=SUCCESS method=FreeCRMTest.freeCrmTitleTest()[pri:0, instance:FreeCRMTest@71be98f5] output={null}]]]>
+                <![CDATA[[TestResult name=freeCrmTitleTest status=FAILURE method=FreeCRMTest.freeCrmTitleTest()[pri:0, instance:FreeCRMTest@71be98f5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:FreeCRMTest@71be98f5]" name="setup" is-config="true" duration-ms="4965" started-at="2020-02-02T18:49:45Z" finished-at="2020-02-02T18:49:50Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:FreeCRMTest@71be98f5]" name="setup" is-config="true" duration-ms="5012" started-at="2020-02-02T19:01:44Z" finished-at="2020-02-02T19:01:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="freemCRMLogoTest()[pri:0, instance:FreeCRMTest@71be98f5]" name="freemCRMLogoTest" duration-ms="34" started-at="2020-02-02T18:49:50Z" finished-at="2020-02-02T18:49:50Z">
+        <test-method status="PASS" signature="freemCRMLogoTest()[pri:0, instance:FreeCRMTest@71be98f5]" name="freemCRMLogoTest" duration-ms="34" started-at="2020-02-02T19:01:49Z" finished-at="2020-02-02T19:01:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- freemCRMLogoTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:FreeCRMTest@71be98f5]" name="tearDown" is-config="true" duration-ms="697" started-at="2020-02-02T18:49:50Z" finished-at="2020-02-02T18:49:50Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:FreeCRMTest@71be98f5]" name="tearDown" is-config="true" duration-ms="716" started-at="2020-02-02T19:01:49Z" finished-at="2020-02-02T19:01:50Z">
           <params>
             <param index="0">
               <value>
@@ -49,7 +99,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:FreeCRMTest@71be98f5]" name="endReport" is-config="true" duration-ms="287" started-at="2020-02-02T18:49:50Z" finished-at="2020-02-02T18:49:51Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:FreeCRMTest@71be98f5]" name="endReport" is-config="true" duration-ms="274" started-at="2020-02-02T19:01:50Z" finished-at="2020-02-02T19:01:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
